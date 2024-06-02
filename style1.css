@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #303030;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .container {
+    background-color: #424242;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #673ab7;
+    transition: color 0.3s;
+}
+
+body.dark-mode h1 {
+    color: #e0e0e0;
+}
+
+.material-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #673ab7;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.material-button:hover {
+    background-color: #512da8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .material-button {
+    background-color: #9575cd;
+    color: #212121;
+}
+
+body.dark-mode .material-button:hover {
+    background-color: #7e57c2;
+    color: #f5f5f5;
+}
+
+#post-container {
+    margin-top: 30px;
+}
+
+.post {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .post {
+    border-bottom: 1px solid #616161;
+}
+
+.post:hover {
+    background-color: #eeeeee;
+}
+
+body.dark-mode .post:hover {
+    background-color: #616161;
+}
+
+.post-details {
+    padding: 10px;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .post-details {
+    background-color: #616161;
+}
+
+.hidden {
+    display: none;
+}
+
+#loading-indicator {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #673ab7;
+}
+
+body.dark-mode #loading-indicator {
+    color: #e0e0e0;
+}
